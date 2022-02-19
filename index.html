@@ -37,6 +37,80 @@
         </div>
     </nav>
 
+    <div id="reserveTableModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Reserve a Table</h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="guestNumber" class="col-form-label col-sm-3">Number of Guests</label>
+                            <div class="form-check form-check-inline pl-2">
+                                <input class="form-check-input" type="radio" name="guestNumber" id="guestNumber1"
+                                    value="1">
+                                <label class="form-check-label" for="guestNumber1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guestNumber" id="guestNumber2"
+                                    value="2">
+                                <label class="form-check-label" for="guestNumber2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guestNumber" id="guestNumber3"
+                                    value="3">
+                                <label class="form-check-label" for="guestNumber3">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guestNumber" id="guestNumber4"
+                                    value="4">
+                                <label class="form-check-label" for="guestNumber4">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guestNumber" id="guestNumber5"
+                                    value="5">
+                                <label class="form-check-label" for="guestNumber5">5</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guestNumber" id="guestNumber6"
+                                    value="6">
+                                <label class="form-check-label" for="guestNumber6">6</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="sectionToReserve" class="form-check-label col-md-3">Section</label>
+                            <div class="btn-group btn-group-toggle col-md-" data-toggle="buttons">
+                                <label class="btn btn-success active">
+                                  <input type="radio" name="sectionToReserve" id="sectionToReserve" value="Non Smoking" autocomplete="off" checked> Non Smoking
+                                </label>
+                                <label class="btn btn-danger">
+                                  <input type="radio" name="sectionToReserve" id="sectionToReserve" value="Smoking" autocomplete="off"> Smoking
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="datetime" class="col-form-label col-md-3">Date and Time</label>
+                            <input type="date" class="form-control col-6 col-sm-4 my-1 mx-1" id="datetime" name="date"
+                                placeholder="Choose Date">
+                            <input type="time" class="form-control col-5 col-sm-3 my-1" id="datetime" name="time"
+                                placeholder="Choose Time">
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-12 offset-sm-4">
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="content">
             <div class="modal-content">
@@ -82,7 +156,7 @@
                             <img src="./img/logo.png" class="img-fluid" alt="">
                         </div>
                         <div class="col-6 align-self-center">
-                            <a class="btn btn-warning px-5" data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+9876543210</strong>" data-placement="bottom" href="#reservetable">Reserve Table</a>
+                            <a class="btn btn-warning px-5" data-toggle="modal" data-target="#reserveTableModal">Reserve Table</a>
                         </div>
                     </div>
                 </div>
@@ -195,7 +269,7 @@
         <div class="row row-content justify-content-center">
             <div class="col-sm-10 col-md-8">
                 <div class="card" id="reservetable">
-                    <h3 class="card-header  bg-warning">Reserve a Table</h3>
+                    <h3 class="card-header bg-warning">Reserve a Table</h3>
                     <div class="card-body">
                         <form>
                             <div class="form-group row">
@@ -304,11 +378,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
 </body>
 
 </html>
