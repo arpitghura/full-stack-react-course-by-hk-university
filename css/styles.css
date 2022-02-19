@@ -30,3 +30,8 @@ body{
 footer a{
     color: rgb(25, 116, 63);
 }
+.tab-content{
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 20px;
+}
