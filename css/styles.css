@@ -49,3 +49,10 @@ footer a{
     left: 0;
     min-height: 300px;
 }
+.carousel-buttons{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: white;
+    z-index: 1;
+}
