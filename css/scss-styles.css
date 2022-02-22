@@ -49,8 +49,8 @@ body{
 .modal-header {
   background-color: #512DA8;
   color: floralwhite; }
-  .modal-header button {
-    color: #ddd; }
+  .modal-header a {
+    color: floralwhite; }
 
 .modal-body {
   background-color: #9575CD; }
