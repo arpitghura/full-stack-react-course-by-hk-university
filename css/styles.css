@@ -13,7 +13,7 @@ body{
     min-height: 400px;
 }
 .footer{
-    margin: 0 autp;
+    margin: 0 auto;
     padding: 20px 0;
     background-color: #b5a3d3;
 }
@@ -55,4 +55,14 @@ footer a{
     bottom: 0;
     color: white;
     z-index: 2;
+}
+.modal-header{
+    background-color: #512DA8;
+    color: floralwhite;
+}
+.modal-header button{
+    color: #ddd;
+}
+.modal-body{
+    background-color: #9575CD;
 }
