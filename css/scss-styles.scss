@@ -12,6 +12,9 @@ $carousel-item-height: 300px;
     margin: 0 auto;
     padding: $pad-up-dn $pad-lr-rg;
 }
+body{
+    padding-top: 50px;
+    z-index: 0; }
 .row-header{
     @include zero-margin();
 }
@@ -30,9 +33,8 @@ $carousel-item-height: 300px;
     color:$text-light;
 }
 .tab-content {
-    border-left: 1px solid $lt-gray;
-    border-right: 1px solid $lt-gray;
-    border-bottom: 1px solid $lt-gray;
+    border: 1px solid $lt-gray;
+    border-top: none;
     padding: 10px;
 }
 .carousel{
@@ -54,7 +56,7 @@ $carousel-item-height: 300px;
     right: 0;
     bottom:0;
     color: $text-light;
-    z-index: 1;
+    z-index: 2;
 }
 .modal-header{
     background-color: $background-dark;
@@ -68,3 +70,4 @@ $carousel-item-height: 300px;
     background-color: $background-light;
 }
 
+// Language: scss

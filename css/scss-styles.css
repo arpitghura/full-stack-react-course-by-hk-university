@@ -1,4 +1,4 @@
-body{
+body {
   padding-top: 50px;
   z-index: 0; }
 
@@ -24,9 +24,8 @@ body{
   color: floralwhite; }
 
 .tab-content {
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
+  border-top: none;
   padding: 10px; }
 
 .carousel {
@@ -44,7 +43,7 @@ body{
   right: 0;
   bottom: 0;
   color: floralwhite;
-  z-index: 1; }
+  z-index: 2; }
 
 .modal-header {
   background-color: #512DA8;
